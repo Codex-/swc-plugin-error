@@ -1,0 +1,13 @@
+[package]
+name = "swc_plugin_issue"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+swc_core = { version = "0.88.*", features = [
+    "ecma_plugin_transform",
+    "trace_macro",
+] }
